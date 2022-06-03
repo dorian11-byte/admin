@@ -133,9 +133,9 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="index1.php" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Admin</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Perfil</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Encargados</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Localizacion</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Profile</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Responsible</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Location</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

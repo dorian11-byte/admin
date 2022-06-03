@@ -76,7 +76,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <!-- Logo icon --><b>
                             <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" width="35" height="35" />
                         </b>
@@ -112,7 +112,7 @@
                         <li class="nav-item">
                             <?php if(!empty($user)): ?>
                                 <?= $user['email'] ?>
-                                <button class="btn btn-danger" value="Cerrar Sesion" title="Cerrar Sesion"> <a href="cerrarsesion.php" style="color: white;"><i class="bi bi-box-arrow-in-left"></i></a></button>
+                                <button class="btn btn-danger" value="Cerrar Sesion" onclick="location.href='cerrarsesion.php'"> Cerrar Sesion <a style="color: white;"><i class="bi bi-box-arrow-in-left"></i></a></button>
                                 <!--<a class="nav-link waves-effect waves-dark" href="#"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>-->                        
                             <?php endif; ?>
                         </li>
@@ -133,9 +133,9 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="index1.php" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Admin</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Perfil</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Encargados</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Localizacion</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Profile</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Responsible</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Location</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

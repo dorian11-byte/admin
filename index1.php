@@ -84,7 +84,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index1.html">
+                    <a class="navbar-brand" href="index1.php">
                         <!-- Logo icon --><b>
                             <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" width="35" height="35"/>
                         </b>
@@ -119,7 +119,7 @@
                         <!-- ============================================================== -->
                         <li class="nav-item">
                             <?php if(!empty($user)): ?>
-                                <a href="#">Usuario: </a> <?= $user['email'] ?>
+                                <a href="#"></a> <?= $user['email'] ?>
                                 <button class="btn btn-danger" value="Cerrar Sesion" onclick="location.href='cerrarsesion.php'"> Cerrar Sesion <a style="color: white;"><i class="bi bi-box-arrow-in-left"></i></a></button>
                                 <!--<a class="nav-link waves-effect waves-dark" href="#"><img src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>-->                        
                             <?php endif; ?>
@@ -141,9 +141,9 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark" href="index1.php" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Admin</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Perfil</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Encargados</span></a></li>
-                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Localizacion</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="pages-profile.php" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Profile</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="table-basic.php" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Responsible</span></a></li>
+                        <li> <a class="waves-effect waves-dark" href="map-google.php" aria-expanded="false"><i class="mdi mdi-earth"></i><span class="hide-menu">Location</span></a></li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->
@@ -179,20 +179,8 @@
                     <div class="col-lg-9 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="d-flex">
-                                    <div>
-                                        <h3 class="card-title m-b-5"><span class="lstick"></span>Sales Overview </h3>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <select class="custom-select b-0">
-                                            <option selected="">January 2017</option>
-                                            <option value="1">February 2017</option>
-                                            <option value="2">March 2017</option>
-                                            <option value="3">April 2017</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div id="sales-overview2" class="p-relative" style="height:360px;"></div>
+                            <iframe width="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/NDhEtGRHkinYwJb-cOaoGwgMWzaIrzKuU3MuSQmipsY?embed=true"></iframe>
+                            <iframe width="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/t5yw6hl8aPOTyItb2d5YK42u2UIhVa8Pr4XI14HQJxE?embed=true"></iframe>
                             </div>
                         </div>
                     </div>
@@ -202,18 +190,10 @@
                     <div class="col-lg-3 col-md-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title"><span class="lstick"></span>Visit Separation</h4>
-                                <div id="visitor" style="height:250px; width:100%;"></div>
-                                <table class="table vm font-14">
-                                    <tr>
-                                        <td class="b-0">Mobile</td>
-                                        <td class="text-right font-medium b-0">38.5%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Tablet</td>
-                                        <td class="text-right font-medium">30.8%</td>
-                                    </tr>
-                                </table>
+                                <h4 class="card-title"><span class="lstick"></span>Notificaciones de Panico</h4>
+                                <div class="ratio" style="--bs-aspect-ratio: 20%;">
+                                <iframe width="100%" frameborder="0" src="https://stem.ubidots.com/app/dashboards/public/widget/TScUreef6voWuwV8lNk8vRfjZM_anW4sWxMFoxvU2oc?embed=true"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,7 @@
 <?php
 
   session_start();
+  error_reporting(0);
 
   if (isset($_SESSION['user_id'])) {
     header('Location: /index1.php');
@@ -15,11 +16,13 @@
     $results = $records->fetch(PDO::FETCH_ASSOC);
 
     $message = '';
-
-    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+	
+    if ($results > 0 AND password_verify($_POST['password'], $results['password']))
+	 {
       $_SESSION['user_id'] = $results['id'];
       header("Location: /index1.php");
     } else {
+		//header("Location: /login.php");
       $message = 'Sorry, those credentials do not match';
     }
   }
@@ -63,10 +66,10 @@
            		    	<h5>Password</h5>
            		    	<input type="password" class="input" name="password">
             	   </div>
-				   	<?php if(!empty($message)): ?>
-      					<p> <?= $message ?></p>
-    				<?php endif; ?>
             	</div>
+				<?php if(!empty($message)): ?>
+      						<p> <?= $message ?></p>
+    					<?php endif; ?>
             	<input type="submit" class="btn" value="Login">
                 <a href="register.php">Are you not register? Register</a>
             </form>
